@@ -1,0 +1,8 @@
+{
+  "name": "Discourse Side-bar Modifier - working",
+  "component": true,
+  "about_url": "https://meta.discourse.org/t/side-bar-modifier/267354/",
+  "license_url": "https://github.com/Lillinator/Sidebar-mods-working/blob/main/LICENSE",
+  "authors": "@Lillinator",
+  "theme_version": "1.1"
+}
