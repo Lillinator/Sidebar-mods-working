@@ -188,10 +188,8 @@
 
 @if $hide_custom_section_from_users == "true" {
   body:not(.staff) {
-    [data-section-name="#{$custom_section}"] {
-      .sidebar-section-header-button {
+    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$custom_section}"] {
         display: none;
-      }
     }
   }
 }
