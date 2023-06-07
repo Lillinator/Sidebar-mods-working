@@ -91,7 +91,7 @@ hide_community_section:
   type: bool
   default: false
   description: 
-    en: "Hide the side-bar Community Section from all regular users"
+    en: "Hide the side-bar Community Section from all users"
   
 hide_community_section_from_anon:
   type: bool
@@ -115,7 +115,7 @@ hide_categories_section:
   type: bool
   default: false
   description: 
-    en: "Hide the sidebar Categories Section from all regular users."
+    en: "Hide the sidebar Categories Section from all users."
   
 hide_categories_from_anon:
   type: bool
@@ -127,7 +127,7 @@ hide_tags_section:
   type: bool
   default: false
   description: 
-    en: "Hide the side-bar Tags Section from all regular users."
+    en: "Hide the side-bar Tags Section from all users."
   
 hide_tags_from_anon:
   type: bool
@@ -175,7 +175,7 @@ category_bullet_rounding:
     - 50%
   description: 
     en: "Side-bar category bullet rounding. Blank = default square, 50% = circle."
-    
+
 hide_custom_section_from_anon:
   type: bool
   default: false
@@ -188,8 +188,8 @@ hide_custom_section_from_users:
   description:
     en: "Hide a custom section from everyone except Staff (admins and moderators). Hide from anonymous users setting above must be disabled."
  
-custom_section:
+custom_section_to_hide:
   type: string
   default: ""
   description:
-    en: "Custom section to hide from anon or regular users as specfied in above two settings."
+    en: "Custom section to hide from anon or regular users as specfied in above two settings. User all lowercase and dashes for spaces (ie: forum-links)."
