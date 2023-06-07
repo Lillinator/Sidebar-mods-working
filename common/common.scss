@@ -65,12 +65,12 @@
     .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
     display: none;
     }
- } 
+} 
 
 // * hide the Community Section from anon users *
 
 @if $hide_community_section_from_anon == "true" {
-    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="cfl-forums"] {
+    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="community"] {
     display: none;
     }
 } 
@@ -97,8 +97,7 @@
     .sidebar-section-wrapper.sidebar-section[data-section-name="tags"] {
     display: none;
     }
-}
-
+} 
 // * hide the Tags Section from anon users *
 
 @if $hide_tags_from_anon == "true" {
@@ -112,7 +111,7 @@
 @if $hide_messages_section == "true" {
     .sidebar-section-wrapper.sidebar-section[data-section-name="messages"] {
     display: none;
-    }
+   }
 } 
 
 // * hide the Channels Section *
@@ -120,7 +119,7 @@
 @if $hide_channels_section == "true" {
     .sidebar-section-wrapper.sidebar-section[data-section-name="channels"] {
     display: none;
-    }
+   }
 } 
 
 // * hide the Personal Chat Section *
@@ -153,7 +152,7 @@
     .sidebar-section-link-wrapper .sidebar-section-link-prefix.icon .prefix-badge, .sidebar-section-link-wrapper .sidebar-section-link-prefix.span .prefix-badge {
     display: none;
     }
-} 
+ } 
 
 // * More sections to hide *
 
@@ -180,15 +179,14 @@
 // * hide custom sections *
 
 @if $hide_custom_section_from_anon == "true" {
-    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="#{$custom_section}"] {
+    .anon .sidebar-section-wrapper.sidebar-section[data-section-name="#{$custom_section_to_hide}"] {
         display: none;
     }
 }
- 
 
 @if $hide_custom_section_from_users == "true" {
   body:not(.staff) {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$custom_section}"] {
+    .sidebar-section-wrapper.sidebar-section[data-section-name="#{$custom_section_to_hide}"] {
         display: none;
     }
   }
