@@ -179,11 +179,9 @@
 
 // * hide custom sections *
 
-@if $hide_custom_section_from_anon == "true" {
-    .sidebar-section-wrapper.sidebar-section[data-section-name="#$custom_section"] {
+.sidebar-section-wrapper.sidebar-section[data-section-name="#{$custom_section}"] {
     display: none;
-    }
-} 
+}
  
 
 @if $hide_custom_section_from_users == "true" {
